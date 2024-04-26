@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
+:root {
+    --primary: #bada55;
+    --dark: #333333;
+    --light: #ffffff;
+    --secondary: #7e7e7e;
+}
+.d-flex {
+    display: flex;
+}
+.d-flex.align-items-center {
+    align-items: center;
+} 
+.d-flex.space-between {
+    justify-content: space-between;
+}
+.container { 
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.header { 
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.logo {
+    color: var(--primary);
+    font-size: 20px;
+}
+.nav .nav-list {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: var(--dark);
+}
+
+.nav-link:hover {
+    color: #bada55;
+}
+
+.sushi {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.title {
+    font-size: 35px;
+    color: #bada55;
+    margin-bottom: 20px;
+}
+
+.sushi-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sushi-card {
+    padding: 20px;
+    flex-basis: 23%;
+    background-color: var(--light);
+    border: 1px solid var(--secondary);
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.sushi-title {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.sushi-description {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.sushi-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sushi-price {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.add-to-cart {
+    padding: 15px 45px;
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: 20 px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.pizza-img {
+    width: 100%;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Цвет фона с непрозрачностью */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-circle {
+    width: 50px; /* Ширина круга */
+    height: 50px; /* Высота круга */
+    border: 5px solid #f3f3f3; /* Цвет круга */
+    border-top: 5px solid #3498db; /* Цвет верхней границы */
+    border-radius: 50%; /* Делает круг круглым */
+    animation: spin 1s linear infinite; /* Анимация вращения */
+}
+
+.error {
+    border-radius: 30px;
+    padding: 30px;
+    color: #ff0000;
+}
+
+/* Анимация вращения */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
